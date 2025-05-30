@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Alfredo Raul Adamsyah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+    #back-to-top {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 text-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white bg-opacity-20 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-3xl font-extrabold tracking-wide text-blue-900">Alfredo Raul Adamsyah</h1>
+      <nav>
+        <ul class="flex gap-8 text-blue-900 font-semibold text-lg">
+          <li><a href="#about" class="hover:text-blue-700 transition">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-700 transition">Projects</a></li>
+          <li><a href="#skills" class="hover:text-blue-700 transition">Skills</a></li>
+          <li><a href="#contact" class="hover:text-blue-700 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-16">
+
+    <!-- About -->
+    <section id="about" class="text-center mb-24" data-aos="fade-up">
+      <img
+        src="https://i.pravatar.cc/200?u=alfredo.rauladamsyah"
+        alt="Foto Alfredo Raul Adamsyah"
+        class="mx-auto rounded-full border-4 border-white shadow-lg w-48 h-48 object-cover mb-6"
+      />
+      <h2 class="text-5xl font-extrabold mb-3 drop-shadow-lg">Halo, Saya Alfredo Raul Adamsyah</h2>
+      <p class="max-w-xl mx-auto text-lg text-white/90 leading-relaxed drop-shadow-md">
+        Selamat Datang 
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-24" data-aos="fade-up" data-aos-delay="150">
+      <h3 class="text-4xl font-bold mb-10 text-center text-white drop-shadow-md">Proyek Saya</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <article class="bg-white bg-opacity-20 rounded-xl p-6 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <img src="https://source.unsplash.com/600x400/?ecommerce,web" alt="Proyek Bakso" class="rounded-md mb-4 object-cover w-full h-48" />
+          <h4 class="text-2xl font-semibold mb-2 text-white drop-shadow-md">Tukang Bakso</h4>
+          <p class="text-white/90 leading-relaxed">Jangan Lupa Mampir Makan Bakso MAntep</p>
+        </article>
+
+        <article class="bg-white bg-opacity-20 rounded-xl p-6 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <img src="https://source.unsplash.com/600x400/?portfolio,website" alt="Proyek Ojek" class="rounded-md mb-4 object-cover w-full h-48" />
+          <h4 class="text-2xl font-semibold mb-2 text-white drop-shadow-md">Tukang Ojek</h4>
+          <p class="text-white/90 leading-relaxed">Jangan Lupa Order di OK-Jek</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mb-24 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-4xl font-bold mb-8 text-center text-white drop-shadow-md">Skill Saya</h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center text-white">
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">K</li>
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">O</li>
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">S</li>
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">O</li>
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">N</li>
+        <li class="bg-white bg-opacity-20 rounded-lg py-4 font-bold drop-shadow-lg hover:bg-opacity-40 transition cursor-default">G</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-md mx-auto" data-aos="fade-up" data-aos-delay="450">
+      <h3 class="text-4xl font-bold mb-8 text-center text-white drop-shadow-md">Kontak Saya</h3>
+      <form id="contact-form" class="bg-white rounded-lg p-8 shadow-lg space-y-6">
+        <input
+          type="text"
+          name="from_name"
+          placeholder="Alfredo Raul Adamsyah"
+          required
+          class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        />
+        <input
+          type="email"
+          name="from_email"
+          placeholder="alfredoraul160104@gmail.com"
+          required
+          class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Hidup ini bukan tentang dimankah kita akan berjalan, Dengan siapakah kita akan berjalan, Tetapi mau kemanakah arah langkah kita akan berjalan"
+          required
+          class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 resize-none"
+        ></textarea>
+    </section>
+
+  </main>
+
+  <!-- Back to Top -->
+  <button
+    id="back-to-top"
+    title="Back to top"
+    class="fixed bottom-8 right-8 bg-cyan-600 text-white p-4 rounded-full shadow-lg hidden hover:bg-cyan-700 transition"
+  >
+    ↑
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-white bg-opacity-20 backdrop-blur-md text-blue-900 text-center py-6 font-semibold">
+    &copy; 2025 Alfredo Raul Adamsyah. All rights reserved.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+    });
+  </script>
+
+ 
+</body>
